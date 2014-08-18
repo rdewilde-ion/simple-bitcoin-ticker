@@ -5,7 +5,7 @@
      */
     var defaultVals = {
         'refresh_time': 15000,
-        'default_market': 'huobi'
+        'default_market': '796'
     };
 
     var markets = {
@@ -48,6 +48,10 @@
         'bitfinex': {
             url: 'https://api.bitfinex.com/v1/pubticker/btcusd',
             key: 'last_price'
+        },
+        'peatio': {
+            url: 'https://peatio.com/api/v2/tickers/btccny.json',
+            key: 'ticker.last'
         }
     };
 

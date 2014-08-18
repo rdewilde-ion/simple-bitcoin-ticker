@@ -5,7 +5,7 @@
      */
     var defaultVals = {
         'refresh_time': 15000,
-        'default_market': 'huobi'
+        'default_market': '796'
     };
 
     var markets = [
@@ -18,7 +18,8 @@
         '796',
         'btctrade',
         'btc100',
-        'bitfinex'
+        'bitfinex',
+        'peatio'
     ];
 
     var OptionsPage = {

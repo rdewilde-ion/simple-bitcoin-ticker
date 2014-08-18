@@ -6,16 +6,17 @@
 
 ### Markets:
  
-- Huobi
 - 796 Xchange
-- BTC-E
 - Bitfinex
 - Bitstamp
-- BTCChina
-- OKCoin
-- CHBTC
-- BTCTrade
+- BTC-E
 - BTC100
+- BTCChina
+- BTCTrade
+- CHBTC
+- Huobi
+- OKCoin
+- Peatio
 
 ### Usage:
 

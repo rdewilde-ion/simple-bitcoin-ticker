@@ -9,8 +9,7 @@
   "license": "MIT",
   "homepage": "https://github.com/ryaneof/simple-bitcoin-ticker",
   "devDependencies": {
-    "gulp": "^3.6.0",
-    "gulp-mocha": "^1.0.0",
+    "mocha": "*",
     "supertest": "*",
     "should": "*"
   }

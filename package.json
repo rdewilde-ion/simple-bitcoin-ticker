@@ -1,0 +1,17 @@
+{
+  "name": "simple-bitcoin-ticker",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ryaneof/simple-bitcoin-ticker.git"
+  },
+  "author": "ryaneof",
+  "license": "MIT",
+  "homepage": "https://github.com/ryaneof/simple-bitcoin-ticker",
+  "devDependencies": {
+    "gulp": "^3.6.0",
+    "gulp-mocha": "^1.0.0",
+    "supertest": "*",
+    "should": "*"
+  }
+}

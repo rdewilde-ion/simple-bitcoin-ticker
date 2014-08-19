@@ -26,7 +26,7 @@
             key: 'ticker.last'
         },
         'okcoin': {
-            url: 'https://www.okcoin.com/api/ticker.do',
+            url: 'https://www.okcoin.cn/api/ticker.do',
             key: 'ticker.last'
         },
         'chbtc': {

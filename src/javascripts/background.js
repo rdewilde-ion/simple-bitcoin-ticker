@@ -22,8 +22,8 @@
             key: 'ticker.last'
         },
         'huobi': {
-            url: 'https://detail.huobi.com/staticmarket/detail.html?jsoncallback=',
-            key: 'p_new'
+            url: 'http://market.huobi.com/staticmarket/ticker_btc_json.js',
+            key: 'ticker.last'
         },
         'okcoin': {
             url: 'https://www.okcoin.com/api/ticker.do',
@@ -80,24 +80,11 @@
 
         handleSingleRequestResult: function (raw) {
             try {
-                var jsonString = '';
-
-                if (config.default_market == 'huobi') {
-                    jsonString = this.handleHuobiTicker(raw);
-                } else {
-                    jsonString = raw;
-                }
-
-                var res = JSON.parse(jsonString);
-                
+                var res = JSON.parse(raw);
                 this.updateLatestInfo(this.getPriceInfo(res));   
             } catch (e) {
                 // exception
             }
-        },
-
-        handleHuobiTicker: function (raw) {
-            return raw.substring(12, raw.length - 1);
         },
 
         restartRequesting: function () {

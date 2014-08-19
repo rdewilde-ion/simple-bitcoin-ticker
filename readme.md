@@ -25,6 +25,15 @@
 3. Select the `"src"` folder in this repository.
 4. The price will show as badge over the extension icon, refresh in every 15 seconds by default.
 
+### Test:
+
+I use *mocha*, keep an eye on API health.
+
+```js
+npm install --save-dev
+./node_modules/mocha/bin/mocha
+```
+
 ### License:
 
 The MIT License (MIT)

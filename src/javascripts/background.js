@@ -42,7 +42,7 @@
             key: 'last'
         },
         'btc100': {
-            url: 'https://www.btc100.org/apidata/getdata.json',
+            url: 'https://www.btc100.com/apidata/getdata.json',
             key: '0.bit'
         },
         'bitfinex': {

@@ -31,7 +31,7 @@ I use *mocha*, keep an eye on API health.
 
 ```js
 npm install --save-dev
-./node_modules/mocha/bin/mocha
+make test
 ```
 
 ### License:

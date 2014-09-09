@@ -10,7 +10,7 @@
   "homepage": "https://github.com/ryaneof/simple-bitcoin-ticker",
   "devDependencies": {
     "mocha": "*",
-    "supertest": "*",
+    "restpal": "*",
     "should": "*"
   }
 }

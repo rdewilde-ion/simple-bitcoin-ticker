@@ -3,26 +3,30 @@ var should = require('should');
 
 describe('API Health Test', function () {
 
-  process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';   
+  process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+
+  var pattern = {
+    status: 200,
+    schema: {
+      required: ['ticker'],
+      properties: {
+        ticker: {
+          type: 'object',
+          properties: {
+            last: {
+              format: 'numeric'
+            }
+          }
+        }
+      }
+    }
+  };
 
   describe('796 Xchange API', function () {
     it('should be healthy', function(done) {
       restpal
         .get('http://api.796.com/v3/futures/ticker.html?type=weekly')
-        .status(200)
-        .schema({
-          required: ['ticker'],
-          properties: {
-            ticker: {
-              required: ['last'],
-              properties: {
-                last: {
-                  type: 'string'
-                }
-              }
-            }
-          }
-        })
+        .pattern(pattern)
       .run(done);
     });
   });
@@ -36,7 +40,7 @@ describe('API Health Test', function () {
           required: ['last_price'],
           properties: {
             last_price: {
-              type: 'string'
+              format: 'numeric'
             }
           }
         })
@@ -53,7 +57,7 @@ describe('API Health Test', function () {
           required: ['last'],
           properties: {
             last: {
-              type: 'string'
+              format: 'numeric'
             }
           }
         })
@@ -65,19 +69,7 @@ describe('API Health Test', function () {
     it('should be healthy', function(done) {
       restpal
         .get('https://btc-e.com/api/2/btc_usd/ticker')
-        .status(200)
-        .schema({
-          required: ['ticker'],
-          ticker: {
-            type: 'object',
-            required: ['last'],
-            properties: {
-              last: {
-                type: 'number'
-              }
-            }
-          }          
-        })
+        .pattern(pattern)
       .run(done);
     });
   });
@@ -106,19 +98,7 @@ describe('API Health Test', function () {
     it('should be healthy', function(done) {
       restpal
         .get('https://data.btcchina.com/data/ticker')
-        .status(200)
-        .schema({
-          required: ['ticker'],
-          ticker: {
-            type: 'number',
-            required: ['last'],
-            properties: {
-              last: {
-                type: 'number'
-              }
-            }
-          }
-        })
+        .pattern(pattern)
       .run(done);
     });
   });
@@ -132,7 +112,7 @@ describe('API Health Test', function () {
           required: ['last'],
           properties: {
             last: {
-              type: 'number'
+              format: 'numeric'
             }
           }    
         })
@@ -144,19 +124,7 @@ describe('API Health Test', function () {
     it('should be healthy', function(done) {
       restpal
         .get('http://api.chbtc.com/data/ticker')
-        .status(200)
-        .schema({
-          required: ['ticker'],
-          ticker: {
-            type: 'number',
-            required: ['last'],
-            properties: {
-              last: {
-                type: 'number'
-              }
-            }
-          }          
-        })
+        .pattern(pattern)
       .run(done);
     });
   });
@@ -165,19 +133,7 @@ describe('API Health Test', function () {
     it('should be healthy', function(done) {
       restpal
         .get('http://market.huobi.com/staticmarket/ticker_btc_json.js')
-        .status(200)
-        .schema({
-          required: ['ticker'],
-          ticker: {
-            type: 'number',
-            required: ['last'],
-            properties: {
-              last: {
-                type: 'number'
-              }
-            }
-          }          
-        })
+        .pattern(pattern)
       .run(done);
     });
   });
@@ -186,19 +142,7 @@ describe('API Health Test', function () {
     it('should be healthy', function(done) {
       restpal
         .get('https://www.okcoin.cn/api/ticker.do')
-        .status(200)
-        .schema({
-          required: ['ticker'],
-          ticker: {
-            type: 'number',
-            required: ['last'],
-            properties: {
-              last: {
-                type: 'number'
-              }
-            }
-          }          
-        })
+        .pattern(pattern)
       .run(done);
     });
   });
@@ -207,19 +151,7 @@ describe('API Health Test', function () {
     it('should be healthy', function(done) {
       restpal
         .get('https://peatio.com/api/v2/tickers/btccny.json')
-        .status(200)
-        .schema({
-          required: ['ticker'],
-          ticker: {
-            type: 'number',
-            required: ['last'],
-            properties: {
-              last: {
-                type: 'number'
-              }
-            }
-          }          
-        })
+        .pattern(pattern)
       .run(done);
     });
   });

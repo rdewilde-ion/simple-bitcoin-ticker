@@ -19,7 +19,7 @@
         'btctrade',
         'btc100',
         'bitfinex',
-        'peatio'
+        'yunbi'
     ];
 
     var OptionsPage = {

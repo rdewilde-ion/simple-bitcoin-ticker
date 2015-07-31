@@ -16,7 +16,7 @@
 - CHBTC
 - Huobi
 - OKCoin
-- Peatio
+- Yunbi
 
 ### Usage:
 

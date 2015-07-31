@@ -49,8 +49,8 @@
             url: 'https://api.bitfinex.com/v1/pubticker/btcusd',
             key: 'last_price'
         },
-        'peatio': {
-            url: 'https://peatio.com/api/v2/tickers/btccny.json',
+        'yunbi': {
+            url: 'https://yunbi.com/api/v2/tickers/btccny.json',
             key: 'ticker.last'
         }
     };

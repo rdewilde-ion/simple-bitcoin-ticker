@@ -147,10 +147,10 @@ describe('API Health Test', function () {
     });
   });
 
-  describe('Peatio API', function () {
+  describe('Yunbi API', function () {
     it('should be healthy', function(done) {
       restpal
-        .get('https://peatio.com/api/v2/tickers/btccny.json')
+        .get('https://yunbi.com/api/v2/tickers/btccny.json')
         .pattern(pattern)
       .run(done);
     });

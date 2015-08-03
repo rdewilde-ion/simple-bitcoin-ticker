@@ -1,5 +1,9 @@
 ## A simple Chrome Extension showing current Bitcoin price ticker.
 
+### Chrome Web Store
+
+[https://chrome.google.com/webstore/detail/simple-bitcoin-ticker/jhbgelfndhaccioppbfadmjabloddnkg/related](https://chrome.google.com/webstore/detail/simple-bitcoin-ticker/jhbgelfndhaccioppbfadmjabloddnkg/related)
+
 ### Screenshot:
 
 ![Screenshot of Simple Bitcoin Ticker](screenshot.png)

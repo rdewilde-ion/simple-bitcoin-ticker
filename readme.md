@@ -15,7 +15,7 @@
 - Bitstamp
 - BTC-E
 - BTC100
-- BTCChina
+- BTCC
 - BTCTrade
 - CHBTC
 - Huobi

@@ -17,8 +17,8 @@
             url: 'https://www.bitstamp.net/api/ticker/',
             key: 'last'
         },
-        'btcchina': {
-            url: 'https://data.btcchina.com/data/ticker',
+        'btcc': {
+            url: 'https://data.btcc.com/data/ticker',
             key: 'ticker.last'
         },
         'huobi': {

@@ -94,10 +94,10 @@ describe('API Health Test', function () {
     });
   });
 
-  describe('BTCChina API', function () {
+  describe('BTCC API', function () {
     it('should be healthy', function(done) {
       restpal
-        .get('https://data.btcchina.com/data/ticker')
+        .get('https://data.btcc.com/data/ticker')
         .pattern(pattern)
       .run(done);
     });

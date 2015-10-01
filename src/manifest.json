@@ -3,7 +3,7 @@
 
     "name": "Simple Bitcoin Ticker",
     "description": "This extension shows latest price ticker of popular BTC trading markets.",
-    "version": "0.0.1",
+    "version": "0.0.2",
 
     "browser_action": {
         "default_icon": "images/icon.png"
@@ -17,7 +17,7 @@
     "options_page": "options.html",
 
     "permissions": [
-        "https://data.btcchina.com/",
+        "https://data.btcc.com/",
         "https://www.bitstamp.net/",
         "https://www.okcoin.cn/",
         "http://api.chbtc.com/",

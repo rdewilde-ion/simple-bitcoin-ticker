@@ -10,7 +10,7 @@
 
     var markets = [
         'bitstamp',
-        'btcchina',
+        'btcc',
         'okcoin',
         'chbtc',
         'huobi',

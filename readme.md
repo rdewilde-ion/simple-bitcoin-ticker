@@ -6,7 +6,9 @@
 
 ### Screenshot:
 
-![Screenshot of Simple Bitcoin Ticker](screenshot.png)
+![Badge Screenshot](screenshots/screenshot-badge.png)
+
+![Option Screenshot](screenshots/screenshot-option.png)
 
 ### Markets:
  

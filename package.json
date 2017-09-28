@@ -3,11 +3,17 @@
   "version": "0.0.2",
   "repository": {
     "type": "git",
-    "url": "git://github.com/ryaneof/simple-bitcoin-ticker.git"
+    "url": "git://github.com/rdewilde/ion-ticker.git"
   },
   "author": "ryaneof",
+  "contributors": [
+    {
+      "name": "Robert de Wilde",
+      "email": "email@robertdewilde.nl"
+    }
+  ],
   "license": "MIT",
-  "homepage": "https://github.com/ryaneof/simple-bitcoin-ticker",
+  "homepage": "https://github.com/rdewilde/ion-ticker",
   "devDependencies": {
     "mocha": "*",
     "restpal": "*",

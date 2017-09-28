@@ -5,53 +5,13 @@
      */
     var defaultVals = {
         'refresh_time': 15000,
-        'default_market': '796'
+        'default_market': 'bittrex'
     };
 
     var markets = {
-        'btce': {
-            url: 'https://btc-e.com/api/2/btc_usd/ticker',
-            key: 'ticker.last'
-        },
-        'bitstamp': {
-            url: 'https://www.bitstamp.net/api/ticker/',
-            key: 'last'
-        },
-        'btcc': {
-            url: 'https://data.btcc.com/data/ticker',
-            key: 'ticker.last'
-        },
-        'huobi': {
-            url: 'http://market.huobi.com/staticmarket/ticker_btc_json.js',
-            key: 'ticker.last'
-        },
-        'okcoin': {
-            url: 'https://www.okcoin.cn/api/ticker.do',
-            key: 'ticker.last'
-        },
-        'chbtc': {
-            url: 'http://api.chbtc.com/data/ticker',
-            key: 'ticker.last'
-        },
-        '796': {
-            url: 'http://api.796.com/v3/futures/ticker.html?type=weekly',
-            key: 'ticker.last'
-        },
-        'btctrade': {
-            url: 'http://www.btctrade.com/api/ticker',
-            key: 'last'
-        },
-        'btc100': {
-            url: 'https://www.btc100.com/apidata/getdata.json',
-            key: '0.bit'
-        },
-        'bitfinex': {
-            url: 'https://api.bitfinex.com/v1/pubticker/btcusd',
-            key: 'last_price'
-        },
-        'yunbi': {
-            url: 'https://yunbi.com/api/v2/tickers/btccny.json',
-            key: 'ticker.last'
+        'bittrex': {
+            url: 'http://www.ionexplorer.com/api/bittrex/ticker/ion',
+            key: 'data.Last'
         }
     };
 
@@ -120,8 +80,16 @@
 
         getPriceInfo: function (res) {
             var price = this.getDescendantProp(res, markets[config.default_market].key);
-            price = (!price || isNaN(price)) ? 
-                    0 : parseFloat(price).toFixed(0);
+
+            if (!price || isNaN(price) || price <= 0) {
+                price = 0
+            } else {
+                while (price < 1000) {
+                    price *= 10;
+                }
+                price = parseFloat(price).toFixed(0);
+            }
+            console.log(price);
             return price;
         },
 

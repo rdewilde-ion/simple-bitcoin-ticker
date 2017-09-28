@@ -2,7 +2,7 @@
 
 ### Chrome Web Store
 
-[https://chrome.google.com/webstore/detail/simple-bitcoin-ticker/jhbgelfndhaccioppbfadmjabloddnkg/related](https://chrome.google.com/webstore/detail/simple-bitcoin-ticker/jhbgelfndhaccioppbfadmjabloddnkg/related)
+[https://chrome.google.com/webstore/detail/ion-ticker/jhbgelfndhaccioppbfadmjabloddnkg/related](https://chrome.google.com/webstore/detail/ion-ticker/jhbgelfndhaccioppbfadmjabloddnkg/related)
 
 ### Screenshot:
 
@@ -12,17 +12,7 @@
 
 ### Markets:
  
-- 796 Xchange
-- Bitfinex
-- Bitstamp
-- BTC-E
-- BTC100
-- BTCC
-- BTCTrade
-- CHBTC
-- Huobi
-- OKCoin
-- Yunbi
+- Bittrex
 
 ### Usage:
 
